@@ -11,8 +11,8 @@
     <script src="script.js" defer></script>
     <title>W. Notícias</title>
 </head>
-<body class="">
-    <header class="header-mobile">
+<body>
+    <header>
        <img src="https://raw.githubusercontent.com/marciomarcal98/noticias/602c4cca16647d6669382116dfc0cce9de6722ba/assets/images/logo.svg" alt="Logo do site de notícias W."> 
 
        <button>
@@ -20,7 +20,7 @@
        </button>
 
 
-       <nav class="">
+       <nav class="mobile">
            <button>
             <img src="https://raw.githubusercontent.com/marciomarcal98/noticias/602c4cca16647d6669382116dfc0cce9de6722ba/assets/images/icon-menu-close.svg" alt="ícone de x para fechar o menu">
            </button>
@@ -33,12 +33,23 @@
         <a href="#">Categorias</a>
 
        </nav>
+
+       <nav class="desktop">
+           <a href="#">Home</a>
+           <a href="#">Novo</a>
+           <a href="#">Popular</a>
+           <a href="#">Trending</a>
+           <a href="#">Categorias</a>
+        </nav>
+
     </header>
 
     <main>
         <section class="primeira-secao">
-            <img src="https://github.com/marciomarcal98/noticias/blob/main/assets/images/image-web-3-mobile.jpg?raw=true" alt="Ícone de puzzle colorido">
-
+            <picture>
+                <source media="(min-width:700px )" srcset="https://github.com/marciomarcal98/noticias/blob/main/assets/images/image-web-3-desktop.jpg?raw=true">
+                <img src="https://github.com/marciomarcal98/noticias/blob/main/assets/images/image-web-3-mobile.jpg?raw=true" alt="Ícone de puzzle colorido">
+            </picture>
             <h1>O futuro brilhante da Web 3.0?</h1>
 
             <p>Nós mergulhamos na próxima evolução da web que afirma devolver o poder das plataformas para as mãos das pessoas. Mas será que ela realmente está cumprindo sua promessa?</p>
